@@ -234,8 +234,36 @@ aside {
   textarea {
     height: 100px;
     margin-bottom: 5px;
+
   }
 }
+#container_sidebyside {
+  justify-content: space-between;
+  flex-direction: row;
+  display:flex;
+}
+#micropost_title {
+    height: 25px;
+    margin-bottom: 5px;
+    }
+#micropost_prep_time {
+    height: 25px;
+    margin-bottom: 5px;
+    width: 150px;
+    
+
+}
+#micropost_cook_time {
+    height: 25px;
+    margin-bottom: 5px;
+    width: 150px;
+}
+/*
+label {
+  display: block;
+}
+*/
+
 
 span.picture {
   margin-top: 10px;

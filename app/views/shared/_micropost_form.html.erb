@@ -1,10 +1,37 @@
 <%= form_for(@micropost, html: { multipart: true }) do |f| %>
   <%= render 'shared/error_messages', object: f.object %>
+  
   <div class="field">
-    <%= f.text_area :content, placeholder: "Compose new micropost..." %>
+    <%= f.label :recipe_title %>
+    <%= f.text_area :title, placeholder: "Name of dish" %>
+  </div>
+  
+  <div id="container_sidebyside">
+    <div class="field">
+    <%= f.label :prep_time %>
+    <%= f.text_area :prep_time %>
+    </div>
+    <div class="field">
+    <%= f.label :cook_time %>
+    <%= f.text_area :cook_time %>
+    </div>
+  </div>
+  
+  <div class="field">
+    <%= f.label :desciption %>
+    <%= f.text_area :content, placeholder: "Describe your dish" %>
+  </div>
+  <div class="field">
+    <%= f.label :ingredients %>
+    <%= f.text_area :content, placeholder: "One ingredient per line" %>
+  </div>
+  <div class="field">
+    <%= f.label :directions %>
+    <%= f.text_area :content, placeholder: "One step per line" %>
   </div>
   <%= f.submit "Post", class: "btn btn-primary" %>
   <span class="picture">
+    <%= f.label :picture %>
     <%= f.file_field :picture, accept: 'image/jpeg,image/gif,image/png' %>
   </span>
 <% end %>
