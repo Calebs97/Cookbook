@@ -22,7 +22,8 @@ class MicropostsController < ApplicationController
   private
 
     def micropost_params
-      params.require(:micropost).permit(:content, :picture)
+      params.require(:micropost).permit(:title, :prep_time, :cook_time, 
+      :description, :ingredients, :directions, :picture)
     end
     
     def correct_user

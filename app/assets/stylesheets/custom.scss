@@ -309,3 +309,44 @@ span.picture {
 .users.follow {
   padding: 0;
 }
+
+/* recipe feed*/
+.whole_page {
+  display:flex;
+  justify-content: space-between;
+  flex-direction: column;
+}
+.top_half {
+  display:flex;
+  justify-content: space-between;
+  flex-direction: row;
+}
+
+.cooking_times {
+  display:flex;
+  flex-direction: row;
+  margin-bottom: 10px;
+}
+
+.title {
+  font-size: 30px;
+  font-weight: bolder;
+}
+.description {
+  padding-right: 10px;
+  margin-bottom: 10px;
+}
+.prep_time {
+  margin-right: 60px;
+}
+
+.ingredients {
+  margin-bottom: 10px;
+
+}
+.directions {
+  
+
+}
+ 
+
